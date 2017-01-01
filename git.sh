@@ -3,7 +3,7 @@
 list=("added index file" "updated readme file" "did some extra calculations" "deleted media files" "extra code removed")
 
 # Loop through each month (1 to 12)
-for month in {1..12}
+for month in {1..3}
 do
   # Loop through 20 random days in the current month
   for ((day=1; day<=20; day++))
