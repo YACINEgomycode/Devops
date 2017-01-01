@@ -24,7 +24,7 @@ do
     do
       touch temp${month}_${day}_${commit}.txt
       git add -A
-      git commit -am "${list[$RANDOM % ${#list[@]}]}"
+      git commit -am "${list[$((RANDOM % ${#list[@]}))]}"
       rm temp${month}_${day}_${commit}.txt
     done
 
