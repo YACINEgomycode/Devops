@@ -14,7 +14,10 @@ do
     # Set the date to be the 1st of the current month in the year 2017
     export GIT_AUTHOR_DATE="2017-$month-01 14:00 +0530"
     export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"
-
+    export GIT_AUTHOR_NAME="YACINEgomycode"
+    export GIT_AUTHOR_EMAIL="jlassi_yassine@live.fr"
+    export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+    export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
     # Loop to generate random commits for the current day
     for ((commit=1; commit<=num_commits; commit++))
     do
@@ -25,7 +28,10 @@ do
     done
 
     # Push the commits for the current day
-    git push
+    git push --force
   done
 done
+
+
+
 
